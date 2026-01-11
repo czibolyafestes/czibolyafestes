@@ -1,0 +1,1361 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czibolyafestés - Szakmai festői munkák Ecseden, Hatvanban, Gyöngyösön</title>
+    <meta name="description" content="Czibolyafestés - professzionális festői munkák Ecseden, Hatvanban, Gyöngyösön és Heves megyében. Beltéri, kültéri festés, tapétázás. Ingyenes felmérés!">
+    <meta name="keywords" content="festés ecsed, festő hatvan, festés gyöngyös, ecsedi festő, hatvani festő, gyöngyösi festő, festői munkák heves megye">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    
+    <!-- Geo Tag for SEO -->
+    <meta name="geo.region" content="HU-HE" />
+    <meta name="geo.placename" content="Ecsed, Hatvan, Gyöngyös, Heves megye" />
+    <meta name="geo.position" content="47.732;20.933" />
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Czibolyafestés",
+        "image": "https://czibolyafestes.hu/images/logo.png",
+        "description": "Szakmai festői munkák Ecseden, Hatvanban, Gyöngyösön és Heves megyében",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ecsed",
+            "addressRegion": "Heves",
+            "addressCountry": "HU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.732,
+            "longitude": 20.933
+        },
+        "url": "https://czibolyafestes.hu",
+        "telephone": "+36-30-123-4567",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "areaServed": ["Ecsed", "Hatvan", "Gyöngyös", "Heves megye"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Festői szolgáltatások",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Beltéri festés"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kültéri festés"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tapétázás"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+            --success: #27ae60;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+        }
+        
+        .btn-secondary {
+            background-color: var(--accent);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e67e22;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--accent);
+        }
+        
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo-slogan {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-top: 2px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 2rem;
+        }
+        
+        .nav-menu a {
+            font-weight: 600;
+            color: var(--primary);
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 60px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* SERVICES SECTION */
+        .services {
+            padding: 80px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* CITIES SECTION */
+        .cities {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .city-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .city-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .city-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        /* CONTACT FORM */
+        .contact {
+            padding: 80px 0;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        
+        .contact-icon {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* QUICK ACTIONS */
+        .quick-actions {
+            background-color: var(--light);
+            padding: 60px 0;
+        }
+        
+        .actions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .action-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .action-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .action-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .action-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        
+        /* TESTIMONIALS */
+        .testimonials {
+            padding: 80px 0;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 0 15px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-location {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo span {
+            color: var(--accent);
+        }
+        
+        .footer-about p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
+        
+        .footer-contact p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            opacity: 0.8;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--accent);
+            width: 20px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* MODAL STYLES */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--gray);
+            cursor: pointer;
+        }
+        
+        .modal-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        /* SUCCESS MESSAGE */
+        .success-message {
+            background-color: rgba(39, 174, 96, 0.1);
+            color: var(--success);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+        
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                margin: 10px 0;
+                margin-left: 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 70px 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .service-card, .city-card, .action-card {
+                padding: 20px;
+            }
+        }
+        
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                CZIBOLYA<span>FESTÉS</span>.HU
+                <div class="logo-slogan">Szakmai festői munkák Heves megyében</div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Kezdőlap</a></li>
+                <li><a href="#services">Szolgáltatások</a></li>
+                <li><a href="#cities">Városok</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a href="#actions">Gyors műveletek</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="fade-in">Professzionális Festői Munkák Heves Megyében</h1>
+            <p class="fade-in">Czibolyafestés - Minőségi beltéri és kültéri festés, tapétázás Ecseden, Hatvanban, Gyöngyösön és környékén. Szakértői garanciával, megfizethető áron.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary fade-in"><i class="fas fa-clipboard-list"></i> Ingyenes felmérés</a>
+                <a href="tel:+36301234567" class="btn btn-secondary fade-in"><i class="fas fa-phone"></i> Hívjon most</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Szolgáltatásaink</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Beltéri Festés</h3>
+                    <p>Lakások, irodák, üzletek profi festése és tapétázása. Minőségi anyagokkal, gyorsan és precízen. Aromamentes, gyorsan száradó festékek.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Kültéri Festés</h3>
+                    <p>Házak, kerítések, kapuk festése és mázolása. Időjárásálló anyagokkal, tartós végeredmény. Homlokzati szigeteléssel együtt is.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Felkészítő Munkák</h3>
+                    <p>Felületek előkészítése, simítása, alapozása. A tartós festési munkák alapja a precíz előkészítés. Repedésjavítás, vakolás.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CITIES SECTION -->
+    <section class="cities" id="cities">
+        <div class="container">
+            <h2 class="section-title">Szolgáltatásaink Heves Megyében</h2>
+            <div class="cities-grid">
+                <div class="city-card fade-in">
+                    <div class="city-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Festés Ecseden</h3>
+                    <p>Ecsed és környékének professzionális festői munkái. Több mint 15 év tapasztalat a térségben.</p>
+                </div>
+                
+                <div class="city-card fade-in">
+                    <div class="city-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Festés Hatvanban</h3>
+                    <p>Hatvan és környékének szakmai festői szolgáltatásai. Gyors reagálás, pontos munka.</p>
+                </div>
+                
+                <div class="city-card fade-in">
+                    <div class="city-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Festés Gyöngyösön</h3>
+                    <p>Gyöngyös és Mátra-vidék minőségi festése. Beltéri és kültéri munkák egyaránt.</p>
+                </div>
+                
+                <div class="city-card fade-in">
+                    <div class="city-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Festés Heves megyében</h3>
+                    <p>Teljes Heves megye lefedettség. Távolság alapú díjszabás, ingyenes felmérés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Kapcsolat</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Elérhetőségeink</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong>Cím:</strong><br>
+                            Ecsed, Heves megye (mobil szolgáltatás)
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <strong>Telefon:</strong><br>
+                            <a href="tel:+36301234567">+36 30 123 4567</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@czibolyafestes.hu">info@czibolyafestes.hu</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Nyitvatartás:</strong><br>
+                            Hétfőtől péntekig: 8:00 - 18:00<br>
+                            Szombat: 8:00 - 12:00 (előzetes egyeztetéssel)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <h3>Küldjön üzenetet</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Név *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Teljes neved" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email cím *</label>
+                            <input type="email" id="email" class="form-control" placeholder="email@pelda.hu" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefonszám</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+36 30 123 4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Helyszín</label>
+                            <select id="location" class="form-control">
+                                <option value="">Válasszon települést...</option>
+                                <option value="ecsed">Ecsed</option>
+                                <option value="hatvan">Hatvan</option>
+                                <option value="gyongyos">Gyöngyös</option>
+                                <option value="egyeb">Egyéb (Heves megye)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Üzenet *</label>
+                            <textarea id="message" class="form-control" placeholder="Írja le részletesen, milyen munkát szeretne..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Üzenet küldése
+                        </button>
+                    </form>
+                    
+                    <div class="success-message" id="successMessage">
+                        Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="quick-actions" id="actions">
+        <div class="container">
+            <h2 class="section-title">Gyors Műveletek</h2>
+            <div class="actions-grid">
+                <div class="action-card fade-in" id="emailAction">
+                    <div class="action-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Küldés</h3>
+                    <p>Írjon emailt közvetlenül nekünk. Gyors válaszgarancia 24 órán belül.</p>
+                </div>
+                
+                <div class="action-card fade-in" id="estimateAction">
+                    <div class="action-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Felmérés Kérése</h3>
+                    <p>Ingyenes felmérés kérése otthonába, irodájába vagy üzletébe.</p>
+                </div>
+                
+                <div class="action-card fade-in" id="facebookAction">
+                    <div class="action-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Facebook Oldal</h3>
+                    <p>Látogasson el Facebook oldalunkra, lássa referenciáinkat és értékeléseket.</p>
+                </div>
+                
+                <div class="action-card fade-in" id="callAction">
+                    <div class="action-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Hívás Most</h3>
+                    <p>Azonnali segítség, kérdésekre válaszolunk. Hívjon bátran!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Rólunk mondták</h2>
+            <div class="testimonial-slider fade-in">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Czibolyafestéssel Ecseden festettettem ki a házam homlokzatát. Precíz, gyors és megbízható munka. Az árajánlat teljesen reális volt, és időben elkészültek. Mindenkinek ajánlom!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            KJ
+                        </div>
+                        <div class="author-info">
+                            <h4>Kovács János</h4>
+                            <div class="author-location">Ecsed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">CZIBOLYA<span>FESTÉS</span>.HU</div>
+                    <p>Szakmai festői munkák Ecseden, Hatvanban, Gyöngyösön és Heves megye egész területén. Minőség, megbízhatóság, pontos munka.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:info@czibolyafestes.hu" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+36301234567" title="Telefon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Gyors Linkek</h3>
+                    <ul>
+                        <li><a href="#home">Kezdőlap</a></li>
+                        <li><a href="#services">Szolgáltatások</a></li>
+                        <li><a href="#cities">Városok</a></li>
+                        <li><a href="#contact">Kapcsolat</a></li>
+                        <li><a href="#actions">Gyors műveletek</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Elérhetőség</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ecsed, Heves megye</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+36301234567">+36 30 123 4567</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@czibolyafestes.hu">info@czibolyafestes.hu</a></p>
+                    <p><i class="fas fa-clock"></i> H-P: 8:00-18:00</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Czibolyafestés.hu - Minden jog fenntartva | Készítette: Czibolyafestés csapata</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <!-- Email Modal -->
+    <div class="modal" id="emailModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeEmailModal">&times;</button>
+            <h3 class="modal-title">Email Küldése</h3>
+            <p>Az alábbi gombra kattintva megnyílik az email kliens, ahol elküldheti üzenetét számunkra.</p>
+            <p><strong>Címzett:</strong> info@czibolyafestes.hu</p>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="mailto:info@czibolyafestes.hu?subject=Érdeklődés Czibolyafestés szolgáltatásairól" class="btn btn-primary">Email Küldése</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Estimate Modal -->
+    <div class="modal" id="estimateModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeEstimateModal">&times;</button>
+            <h3 class="modal-title">Ingyenes Felmérés Kérése</h3>
+            <p>Töltse ki az alábbi űrlapot és mi felvesszük Önnel a kapcsolatot, hogy egyeztessünk egy személyes felmérést.</p>
+            <form id="estimateForm">
+                <div class="form-group">
+                    <label for="estimateName">Név *</label>
+                    <input type="text" id="estimateName" class="form-control" placeholder="Teljes neved" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estimatePhone">Telefonszám *</label>
+                    <input type="tel" id="estimatePhone" class="form-control" placeholder="+36 30 123 4567" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estimateLocation">Helyszín *</label>
+                    <input type="text" id="estimateLocation" class="form-control" placeholder="Cím (város, utca, házszám)" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estimateDetails">Rövid leírás</label>
+                    <textarea id="estimateDetails" class="form-control" placeholder="Pl.: '50 m²-es lakás festése', 'ház homlokzata 120 m²'"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i> Felmérés Kérése
+                </button>
+            </form>
+            <div class="success-message" id="estimateSuccessMessage">
+                Köszönjük jelentkezését! 24 órán belül felvesszük Önnel a kapcsolatot a felmérés időpontjának egyeztetésére.
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Modal -->
+    <div class="modal" id="callModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeCallModal">&times;</button>
+            <h3 class="modal-title">Hívás Most</h3>
+            <p>Az alábbi telefonszámon azonnal elér minket egy szakember:</p>
+            <p style="text-align: center; font-size: 1.8rem; font-weight: bold; margin: 20px 0; color: var(--primary);">+36 30 123 4567</p>
+            <p>Várjuk hívását hétfőtől péntekig 8:00-18:00 között, szombaton 8:00-12:00-ig.</p>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="tel:+36301234567" class="btn btn-primary">Hívás Most</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Modal Elements
+        const emailModal = document.getElementById('emailModal');
+        const estimateModal = document.getElementById('estimateModal');
+        const callModal = document.getElementById('callModal');
+        
+        // Action Buttons
+        const emailAction = document.getElementById('emailAction');
+        const estimateAction = document.getElementById('estimateAction');
+        const facebookAction = document.getElementById('facebookAction');
+        const callAction = document.getElementById('callAction');
+        
+        // Close Buttons
+        const closeEmailModal = document.getElementById('closeEmailModal');
+        const closeEstimateModal = document.getElementById('closeEstimateModal');
+        const closeCallModal = document.getElementById('closeCallModal');
+        
+        // Open Modals
+        emailAction.addEventListener('click', function() {
+            emailModal.style.display = 'flex';
+        });
+        
+        estimateAction.addEventListener('click', function() {
+            estimateModal.style.display = 'flex';
+        });
+        
+        facebookAction.addEventListener('click', function() {
+            window.open('https://facebook.com', '_blank');
+        });
+        
+        callAction.addEventListener('click', function() {
+            callModal.style.display = 'flex';
+        });
+        
+        // Close Modals
+        closeEmailModal.addEventListener('click', function() {
+            emailModal.style.display = 'none';
+        });
+        
+        closeEstimateModal.addEventListener('click', function() {
+            estimateModal.style.display = 'none';
+        });
+        
+        closeCallModal.addEventListener('click', function() {
+            callModal.style.display = 'none';
+        });
+        
+        // Close modals when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === emailModal) emailModal.style.display = 'none';
+            if (e.target === estimateModal) estimateModal.style.display = 'none';
+            if (e.target === callModal) callModal.style.display = 'none';
+        });
+        
+        // Form Submissions
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const successMessage = document.getElementById('successMessage');
+            
+            // Simulate sending
+            setTimeout(function() {
+                successMessage.style.display = 'block';
+                document.getElementById('contactForm').reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 1000);
+            
+            // In a real application, you would send the data to a server here
+            console.log('Contact form submitted');
+        });
+        
+        document.getElementById('estimateForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const successMessage = document.getElementById('estimateSuccessMessage');
+            
+            // Simulate sending
+            setTimeout(function() {
+                successMessage.style.display = 'block';
+                document.getElementById('estimateForm').reset();
+                
+                // Hide message and modal after 5 seconds
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                    estimateModal.style.display = 'none';
+                }, 5000);
+            }, 1000);
+            
+            // In a real application, you would send the data to a server here
+            console.log('Estimate form submitted');
+        });
+        
+        // Fade-in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = function() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        // Initial check
+        fadeInOnScroll();
+        
+        // Check on scroll
+        window.addEventListener('scroll', fadeInOnScroll);
+        
+        // Store form data in localStorage to prevent loss on refresh
+        const contactForm = document.getElementById('contactForm');
+        const estimateForm = document.getElementById('estimateForm');
+        
+        // Save contact form data
+        contactForm.addEventListener('input', function() {
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                location: document.getElementById('location').value,
+                message: document.getElementById('message').value
+            };
+            localStorage.setItem('contactFormData', JSON.stringify(formData));
+        });
+        
+        // Save estimate form data
+        estimateForm.addEventListener('input', function() {
+            const formData = {
+                name: document.getElementById('estimateName').value,
+                phone: document.getElementById('estimatePhone').value,
+                location: document.getElementById('estimateLocation').value,
+                details: document.getElementById('estimateDetails').value
+            };
+            localStorage.setItem('estimateFormData', JSON.stringify(formData));
+        });
+        
+        // Load saved form data on page load
+        window.addEventListener('load', function() {
+            // Contact form
+            const savedContactData = JSON.parse(localStorage.getItem('contactFormData'));
+            if (savedContactData) {
+                document.getElementById('name').value = savedContactData.name || '';
+                document.getElementById('email').value = savedContactData.email || '';
+                document.getElementById('phone').value = savedContactData.phone || '';
+                document.getElementById('location').value = savedContactData.location || '';
+                document.getElementById('message').value = savedContactData.message || '';
+            }
+            
+            // Estimate form
+            const savedEstimateData = JSON.parse(localStorage.getItem('estimateFormData'));
+            if (savedEstimateData) {
+                document.getElementById('estimateName').value = savedEstimateData.name || '';
+                document.getElementById('estimatePhone').value = savedEstimateData.phone || '';
+                document.getElementById('estimateLocation').value = savedEstimateData.location || '';
+                document.getElementById('estimateDetails').value = savedEstimateData.details || '';
+            }
+        });
+        
+        // Clear form data when successfully submitted
+        contactForm.addEventListener('submit', function() {
+            localStorage.removeItem('contactFormData');
+        });
+        
+        estimateForm.addEventListener('submit', function() {
+            localStorage.removeItem('estimateFormData');
+        });
+        
+        // Current year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.getElementById('currentYear');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
