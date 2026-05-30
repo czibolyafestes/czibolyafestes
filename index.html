@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Czibolyafestés · Festő Ecséd, Hatvan, Gyöngyös | Profi beltéri és kültéri munkák</title>
-    <meta name="description" content="Czibolyafestés - megbízható festő Ecséden, Hatvanban, Gyöngyösön és Heves megyében. Beltéri falfestés, kültéri homlokzatfestés, tapétázás, glettelés. Ingyenes felmérés!">
-    <meta name="keywords" content="festés ecséd, festő hatvan, festés gyöngyös, ecsédi festő, hatvani festő, gyöngyösi festő, festői munkák heves megye, beltéri festés, kültéri festés, tapétázás, homlokzatfestés">
+    <title>Czibolyafestés · Professzionális Festő Ecséd, Hatvan, Gyöngyös | Ingyenes Felmérés</title>
+    <meta name="description" content="Czibolyafestés - prémium beltéri és kültéri festés, tapétázás Ecséden, Hatvanban, Gyöngyösön és Heves megyében. 15+ év tapasztalat, garancia a munkára. Ingyenes felmérés!">
+    <meta name="keywords" content="festés ecséd, festő hatvan, festés gyöngyös, ecsédi festő, hatvani festő, gyöngyösi festő, festői munkák heves megye, beltéri festés, kültéri festés, tapétázás">
     <meta name="author" content="Czibolyafestés">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://czibolyafestes.hu/">
@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,69 +24,37 @@
         emailjs.init('czibolyafestesHU');
     </script>
     
-    <!-- Favicon és egyéb ikonok -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e74c3c">
-    <meta name="msapplication-TileColor" content="#2c3e50">
+    <meta name="msapplication-TileColor" content="#1a1a2e">
     <meta name="theme-color" content="#ffffff">
     
-    <!-- Geo Tag for SEO -->
     <meta name="geo.region" content="HU-HE" />
     <meta name="geo.placename" content="Ecséd, Hatvan, Gyöngyös, Heves megye" />
     <meta name="geo.position" content="47.732;20.933" />
     
-    <!-- Schema.org strukturált adat -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Czibolyafestés",
         "image": "https://czibolyafestes.hu/images/logo.png",
-        "description": "Szakmai festői munkák Ecséden, Hatvanban, Gyöngyösön és Heves megyében. Beltéri és kültéri festés, tapétázás.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Ecséd",
-            "addressRegion": "Heves",
-            "addressCountry": "HU"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 47.732,
-            "longitude": 20.933
-        },
+        "description": "Professzionális festői munkák Ecséden, Hatvanban, Gyöngyösön és Heves megyében. Beltéri és kültéri festés, tapétázás.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Ecséd", "addressRegion": "Heves", "addressCountry": "HU" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 47.732, "longitude": 20.933 },
         "url": "https://czibolyafestes.hu",
         "telephone": "+36-70-500-9471",
         "email": "czibolyafestes@gmail.com",
         "priceRange": "$$",
         "openingHours": "Mo-Fr 08:00-18:00",
-        "areaServed": ["Ecséd", "Hatvan", "Gyöngyös", "Heves megye"],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Festői szolgáltatások",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": { "@type": "Service", "name": "Beltéri festés" }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": { "@type": "Service", "name": "Kültéri homlokzatfestés" }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": { "@type": "Service", "name": "Tapétázás és glettelés" }
-                }
-            ]
-        }
+        "areaServed": ["Ecséd", "Hatvan", "Gyöngyös", "Heves megye"]
     }
     </script>
     
     <style>
-        /* RESET & ALAPVETŐ STÍLUSOK */
         * {
             margin: 0;
             padding: 0;
@@ -94,215 +62,252 @@
         }
         
         :root {
-            --primary: #2c3e50;
-            --secondary: #e74c3c;
-            --accent: #f39c12;
-            --light: #ecf0f1;
-            --dark: #1a252f;
-            --gray: #7f8c8d;
-            --success: #27ae60;
-            --white: #ffffff;
-            --shadow-sm: 0 5px 20px rgba(0,0,0,0.08);
-            --shadow-md: 0 10px 30px rgba(0,0,0,0.12);
-            --radius: 12px;
-            --transition: all 0.3s ease;
+            --primary: #0f172a;
+            --secondary: #e11d48;
+            --accent: #f59e0b;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 10px 15px rgba(0,0,0,0.03);
+            --shadow-lg: 0 20px 25px rgba(0,0,0,0.08), 0 10px 10px rgba(0,0,0,0.02);
+            --shadow-xl: 0 25px 50px rgba(0,0,0,0.12);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9fafb;
-            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--background);
+            -webkit-font-smoothing: antialiased;
         }
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            margin-bottom: 1rem;
+        h1, h2, h3, h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.02em;
             color: var(--primary);
-            line-height: 1.3;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
+            line-height: 1.2;
         }
         
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 92%;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 20px;
         }
         
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            padding: 14px 32px;
+            gap: 10px;
+            padding: 16px 34px;
             background-color: var(--secondary);
             color: white;
             border: none;
             border-radius: 50px;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: var(--transition);
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
-            letter-spacing: 0.5px;
+            box-shadow: 0 10px 20px -8px rgba(225, 29, 72, 0.4);
+            letter-spacing: -0.01em;
+            white-space: nowrap;
         }
-        
         .btn:hover {
-            background-color: #c0392b;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+            background-color: #be123c;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px -8px rgba(225, 29, 72, 0.5);
         }
-        
         .btn-outline {
             background-color: transparent;
             border: 2px solid white;
             box-shadow: none;
-            backdrop-filter: blur(4px);
         }
         .btn-outline:hover {
             background-color: white;
             color: var(--secondary);
             border-color: white;
         }
-        
         .btn-accent {
             background-color: var(--accent);
-            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
-        }
-        .btn-accent:hover {
-            background-color: #e67e22;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            position: relative;
-            padding-bottom: 20px;
+            box-shadow: 0 10px 20px -8px rgba(245, 158, 11, 0.4);
             color: var(--primary);
         }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90px;
-            height: 5px;
-            background: linear-gradient(to right, var(--secondary), var(--accent));
-            border-radius: 5px;
+        .btn-accent:hover {
+            background-color: #d97706;
+            box-shadow: 0 15px 25px -8px rgba(245, 158, 11, 0.5);
         }
         
-        /* FEJLÉC */
+        .section-badge {
+            display: inline-block;
+            background-color: rgba(225, 29, 72, 0.1);
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+            letter-spacing: 0.03em;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            max-width: 650px;
+            margin: 0 auto 3.5rem;
+            line-height: 1.6;
+        }
+        
+        /* Navigáció */
         header {
-            background-color: rgba(255,255,255,0.96);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
+            padding: 14px 0;
         }
-        
         .logo {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 1.8rem;
+            font-weight: 800;
             color: var(--primary);
-            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
         .logo span {
             color: var(--secondary);
         }
-        .logo-slogan {
-            font-size: 0.8rem;
-            color: var(--gray);
-            margin-top: 2px;
-            font-weight: 400;
-        }
-        
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.2rem;
+            align-items: center;
         }
         .nav-menu a {
             font-weight: 600;
-            color: var(--primary);
-            position: relative;
-            padding: 5px 0;
+            font-size: 0.95rem;
+            color: var(--text);
+            transition: color 0.2s;
         }
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+        .nav-cta {
             background-color: var(--secondary);
-            transition: width 0.3s;
+            color: white !important;
+            padding: 10px 22px !important;
+            border-radius: 50px;
+            font-weight: 700 !important;
         }
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
-        
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--primary);
-            cursor: pointer;
         }
         
-        /* HŐS SZEKCIÓ */
+        /* Hero */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
-            text-align: center;
-            padding: 120px 0 100px;
-            margin-bottom: 70px;
+            padding: 90px 0 100px;
+            position: relative;
+            overflow: hidden;
         }
-        .hero h1 {
-            font-size: 3.2rem;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 70%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(225,29,72,0.25) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
             color: white;
             margin-bottom: 1.5rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+            line-height: 1.15;
         }
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 750px;
-            margin: 0 auto 2.5rem;
-            opacity: 0.95;
+        .hero-content p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
         }
-        .hero-btns {
+        .hero-stats {
             display: flex;
-            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .stat-item h3 {
+            font-size: 2rem;
+            color: white;
+        }
+        .stat-item p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            margin: 0;
+        }
+        .hero-visual {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            flex-direction: column;
             gap: 20px;
-            flex-wrap: wrap;
+        }
+        .hero-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: rgba(255,255,255,0.08);
+            padding: 18px 22px;
+            border-radius: 16px;
+        }
+        .hero-card i {
+            font-size: 2rem;
+            color: var(--accent);
+        }
+        .hero-card span {
+            font-weight: 600;
+            font-size: 1.1rem;
         }
         
-        /* SZOLGÁLTATÁSOK */
+        /* Szolgáltatások */
         .services {
-            padding: 80px 0;
+            padding: 100px 0;
+            background: white;
         }
         .services-grid {
             display: grid;
@@ -310,250 +315,199 @@
             gap: 30px;
         }
         .service-card {
-            background-color: white;
+            background: var(--surface);
+            border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 35px 25px;
-            box-shadow: var(--shadow-sm);
+            padding: 40px 30px;
             transition: var(--transition);
-            text-align: center;
+            position: relative;
         }
         .service-card:hover {
-            transform: translateY(-12px);
-            box-shadow: var(--shadow-md);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
         }
         .service-icon {
-            font-size: 3rem;
+            width: 60px;
+            height: 60px;
+            background: rgba(225,29,72,0.08);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
             color: var(--secondary);
-            margin-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
         }
         
-        /* VÁROSOK */
+        /* Városok */
         .cities {
-            background-color: var(--light);
-            padding: 80px 0;
+            padding: 90px 0;
+            background: var(--background);
         }
         .cities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
         }
         .city-card {
-            background-color: white;
-            border-radius: var(--radius);
-            padding: 30px 20px;
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 28px 20px;
             text-align: center;
-            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
             transition: var(--transition);
         }
         .city-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-md);
+            border-color: var(--secondary);
+            box-shadow: var(--shadow-lg);
         }
-        .city-icon {
-            font-size: 2.5rem;
-            color: var(--accent);
-            margin-bottom: 15px;
+        .city-card i {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 14px;
         }
         
-        /* KAPCSOLAT */
+        /* Kapcsolat */
         .contact {
-            padding: 80px 0;
+            padding: 100px 0;
+            background: white;
         }
-        .contact-container {
+        .contact-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 50px;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 70px;
             align-items: start;
         }
-        .contact-info h3 {
-            font-size: 2rem;
-            margin-bottom: 25px;
+        .contact-details {
+            background: var(--background);
+            padding: 40px;
+            border-radius: var(--radius);
         }
         .contact-item {
             display: flex;
-            align-items: flex-start;
-            margin-bottom: 25px;
-            gap: 15px;
+            gap: 18px;
+            margin-bottom: 28px;
         }
-        .contact-icon {
-            font-size: 1.3rem;
+        .contact-item i {
+            font-size: 1.4rem;
             color: var(--secondary);
             margin-top: 4px;
         }
         .contact-form {
-            background-color: white;
-            padding: 35px;
+            background: var(--surface);
+            padding: 45px;
             border-radius: var(--radius);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
         .form-group label {
             display: block;
-            margin-bottom: 8px;
             font-weight: 600;
+            margin-bottom: 8px;
             color: var(--primary);
         }
         .form-control {
             width: 100%;
             padding: 14px 18px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 1rem;
+            background: var(--background);
             transition: 0.2s;
         }
         .form-control:focus {
             outline: none;
             border-color: var(--secondary);
-            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+            box-shadow: 0 0 0 4px rgba(225,29,72,0.1);
         }
-        textarea.form-control {
-            min-height: 140px;
-            resize: vertical;
-        }
-        .success-message {
-            background-color: rgba(39, 174, 96, 0.1);
-            color: var(--success);
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            display: none;
-            font-weight: 600;
-        }
-        .form-loader {
-            display: none;
-            text-align: center;
-            margin-top: 15px;
-        }
-        .loader {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid var(--secondary);
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 10px;
-        }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         
-        /* GYORS MŰVELETEK */
+        /* Gyors műveletek */
         .quick-actions {
-            background-color: var(--light);
             padding: 80px 0;
+            background: var(--background);
         }
         .actions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
         }
         .action-card {
-            background-color: white;
-            border-radius: var(--radius);
-            padding: 30px 20px;
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 35px 20px;
             text-align: center;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
             cursor: pointer;
+            border: 1px solid var(--border);
+            transition: var(--transition);
         }
         .action-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-md);
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
         }
-        .action-icon {
-            font-size: 2.8rem;
+        .action-card i {
+            font-size: 2.4rem;
             color: var(--secondary);
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
         
-        /* VÉLEMÉNYEK */
+        /* Vélemények */
         .testimonials {
-            padding: 80px 0;
+            padding: 90px 0;
+            background: white;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
         }
         .testimonial-card {
-            background-color: white;
-            border-radius: var(--radius);
+            background: var(--background);
             padding: 35px;
-            box-shadow: var(--shadow-sm);
-            max-width: 750px;
-            margin: 0 auto;
-            text-align: center;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
         }
-        .testimonial-text {
-            font-style: italic;
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-            line-height: 1.8;
-        }
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        .author-avatar {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            background-color: #ecf0f1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            color: var(--primary);
+        .stars {
+            color: var(--accent);
+            margin-bottom: 16px;
         }
         
-        /* LÁBLÉC */
+        /* Lábléc */
         footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 60px 0 25px;
+            background: var(--primary);
+            color: rgba(255,255,255,0.8);
+            padding: 70px 0 30px;
         }
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 40px;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
             margin-bottom: 40px;
         }
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .footer-logo span { color: var(--accent); }
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 42px;
-            height: 42px;
-            background-color: rgba(255,255,255,0.08);
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-        .social-icons a:hover {
-            background-color: var(--accent);
-            transform: translateY(-3px);
-        }
-        .copyright {
-            text-align: center;
-            padding-top: 25px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
         
-        /* RESZPONZIVITÁS */
         @media (max-width: 992px) {
-            .contact-container {
+            .hero .container {
                 grid-template-columns: 1fr;
             }
-            .hero h1 { font-size: 2.5rem; }
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .actions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         @media (max-width: 768px) {
             .nav-menu {
@@ -564,130 +518,130 @@
                 width: 100%;
                 background: white;
                 flex-direction: column;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                padding: 25px;
+                box-shadow: var(--shadow-lg);
             }
             .nav-menu.active { display: flex; }
-            .nav-menu li { margin: 10px 0; }
             .mobile-menu-btn { display: block; }
-            .hero { padding: 80px 0; }
-            .hero h1 { font-size: 2rem; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .actions-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container header-container">
-            <div>
-                <div class="logo">CZIBOLYA<span>FESTÉS</span>.HU</div>
-                <div class="logo-slogan">Megbízható festő Ecséden, Hatvanban, Gyöngyösön</div>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü"><i class="fas fa-bars"></i></button>
+            <div class="logo">CZIBOLYA<span>FESTÉS</span></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Kezdőlap</a></li>
                 <li><a href="#services">Szolgáltatások</a></li>
                 <li><a href="#cities">Városok</a></li>
                 <li><a href="#contact">Kapcsolat</a></li>
-                <li><a href="#actions">Gyorsműveletek</a></li>
+                <li><a href="tel:+36705009471" class="nav-cta"><i class="fas fa-phone"></i> +36 70 500 9471</a></li>
             </ul>
         </div>
     </header>
 
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="container">
-            <h1>Professzionális Festés Heves Megyében</h1>
-            <p>Czibolyafestés – beltéri és kültéri festés, tapétázás, glettelés Ecséden, Hatvanban, Gyöngyösön és a környező településeken. Ingyenes felmérés, gyors árajánlat.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn"><i class="fas fa-clipboard-list"></i> Ingyenes felmérés</a>
-                <a href="tel:+36705009471" class="btn btn-outline"><i class="fas fa-phone"></i> +36 70 500 9471</a>
+            <div class="hero-content">
+                <h1>Az otthona megérdemli a legjobb festőt</h1>
+                <p>Czibolyafestés – prémium festői munkák Ecséden, Hatvanban, Gyöngyösön. 15 év tapasztalat, garancia a minőségre.</p>
+                <div style="display:flex; gap:15px; flex-wrap:wrap;">
+                    <a href="#contact" class="btn">Ingyenes felmérés</a>
+                    <a href="tel:+36705009471" class="btn btn-outline">Hívjon most</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><h3>500+</h3><p>Befejezett projekt</p></div>
+                    <div class="stat-item"><h3>15 év</h3><p>Szakmai tapasztalat</p></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card"><i class="fas fa-paint-roller"></i><span>Beltéri festés, tapétázás</span></div>
+                <div class="hero-card"><i class="fas fa-home"></i><span>Kültéri homlokzatfestés</span></div>
+                <div class="hero-card"><i class="fas fa-shield-alt"></i><span>Garancia és biztosítás</span></div>
             </div>
         </div>
     </section>
 
     <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Szolgáltatásaink</h2>
+        <div class="container" style="text-align:center;">
+            <span class="section-badge">SZOLGÁLTATÁSOK</span>
+            <h2 class="section-title">Amit kínálunk</h2>
+            <p class="section-subtitle">Teljes körű festészeti megoldások egy kézből, az előkészítéstől az utolsó ecsetvonásig.</p>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
-                    <h3>Beltéri festés</h3>
-                    <p>Lakások, irodák, üzletek teljes körű festése. Diszperzites és oldószeres festékek, színtervezés, precíz kivitelezés.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-home"></i></div>
-                    <h3>Kültéri homlokzatfestés</h3>
-                    <p>Családi házak, társasházak homlokzatának időjárásálló festése. Vakolatjavítás, alapozás, modern színválaszték.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-border-all"></i></div>
-                    <h3>Tapétázás & glettelés</h3>
-                    <p>Üvegszövet tapéta, mintás tapéták, festhető tapéták ragasztása. Falak glettelése, csiszolása a tökéletes felületért.</p>
-                </div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-paint-roller"></i></div><h3>Beltéri falfestés</h3><p>Precíz belső festés, gipszkarton festés, színtervezés. Gyorsan száradó, illatmentes prémium festékekkel.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-building"></i></div><h3>Homlokzatfestés</h3><p>Időjárásálló külső festés, hőszigetelő rendszerek festése. Modern színek, tartós védelem.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-border-all"></i></div><h3>Tapétázás & glettelés</h3><p>Üvegszövet tapéta, mintás és festhető tapéták ragasztása. Tökéletes felület gletteléssel, csiszolással.</p></div>
             </div>
         </div>
     </section>
 
     <section class="cities" id="cities">
-        <div class="container">
-            <h2 class="section-title">Ahol dolgozunk</h2>
+        <div class="container" style="text-align:center;">
+            <span class="section-badge">TERÜLET</span>
+            <h2 class="section-title">Ahol otthon vagyunk</h2>
             <div class="cities-grid">
-                <div class="city-card"><div class="city-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Festés Ecséden</h3><p>Helyi festő Ecséden, gyors kiérkezéssel. Családi házak, lakások festése.</p></div>
-                <div class="city-card"><div class="city-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Festő Hatvan</h3><p>Hatvan és környéke professzionális festése. Beltéri munkák, homlokzatok.</p></div>
-                <div class="city-card"><div class="city-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Festés Gyöngyösön</h3><p>Gyöngyös és a Mátra vidéke. Megbízható kivitelezés, tiszta munka.</p></div>
-                <div class="city-card"><div class="city-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Heves megye</h3><p>Teljes Heves megyében vállalunk munkát. Ingyenes felmérés a helyszínen.</p></div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i><h3>Ecséd</h3><p>Helyi festő, gyors kiérkezés</p></div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i><h3>Hatvan</h3><p>Megbízható festés a városban</p></div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i><h3>Gyöngyös</h3><p>Mátra környéki munkák</p></div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i><h3>Heves megye</h3><p>Teljes megyei lefedettség</p></div>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Kapcsolatfelvétel</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Elérhetőségeink</h3>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Cím:</strong><br>Ecséd, Heves megye (mobil szolgáltatás)</div></div>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><strong>Telefon:</strong><br><a href="tel:+36705009471">+36 70 500 9471</a></div></div>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><strong>Email:</strong><br><a href="mailto:czibolyafestes@gmail.com">czibolyafestes@gmail.com</a></div></div>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-clock"></i></div><div><strong>Nyitvatartás:</strong><br>H-P: 8:00-18:00, Sz: 8:00-12:00</div></div>
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <span class="section-badge">KAPCSOLAT</span>
+                    <h2 style="font-size:2rem; margin-bottom:1.5rem;">Beszéljünk a projektjéről</h2>
+                    <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Telefon</strong><br><a href="tel:+36705009471" style="font-size:1.2rem; font-weight:700;">+36 70 500 9471</a></div></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><br>czibolyafestes@gmail.com</div></div>
+                    <div class="contact-item"><i class="fas fa-map-pin"></i><div><strong>Cím</strong><br>Ecséd, Heves megye</div></div>
                 </div>
                 <div class="contact-form">
-                    <h3>Írjon nekünk</h3>
                     <form id="contactForm">
-                        <div class="form-group"><label for="name">Név *</label><input type="text" id="name" class="form-control" placeholder="Teljes neve" required></div>
-                        <div class="form-group"><label for="email">Email cím *</label><input type="email" id="email" class="form-control" placeholder="email@pelda.hu" required></div>
-                        <div class="form-group"><label for="phone">Telefonszám</label><input type="tel" id="phone" class="form-control" placeholder="+36 70 500 9471"></div>
-                        <div class="form-group"><label for="location">Helyszín</label><select id="location" class="form-control"><option value="">Válasszon települést...</option><option value="Ecséd">Ecséd</option><option value="Hatvan">Hatvan</option><option value="Gyöngyös">Gyöngyös</option><option value="Egyéb (Heves megye)">Egyéb (Heves megye)</option></select></div>
-                        <div class="form-group"><label for="message">Üzenet *</label><textarea id="message" class="form-control" placeholder="Írja le, milyen munkáról van szó..." required></textarea></div>
-                        <button type="submit" class="btn" style="width:100%;"><i class="fas fa-paper-plane"></i> Üzenet küldése</button>
-                        <div class="form-loader" id="formLoader"><div class="loader"></div><p>Küldés folyamatban...</p></div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Név *</label><input type="text" id="name" class="form-control" required></div>
+                            <div class="form-group"><label>Email *</label><input type="email" id="email" class="form-control" required></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Telefon</label><input type="tel" id="phone" class="form-control"></div>
+                            <div class="form-group"><label>Helyszín</label><select id="location" class="form-control"><option value="">Válasszon...</option><option>Ecséd</option><option>Hatvan</option><option>Gyöngyös</option><option>Egyéb</option></select></div>
+                        </div>
+                        <div class="form-group"><label>Üzenet *</label><textarea id="message" class="form-control" rows="5" required></textarea></div>
+                        <button type="submit" class="btn" style="width:100%;">Ajánlatkérés küldése</button>
+                        <div id="formLoader" style="display:none; text-align:center; margin-top:15px;"><div style="border:3px solid #f3f3f3; border-top:3px solid var(--secondary); border-radius:50%; width:28px; height:28px; animation:spin 0.8s linear infinite; margin:0 auto;"></div></div>
+                        <div id="successMessage" style="display:none; background:#ecfdf5; color:#065f46; padding:14px; border-radius:12px; margin-top:20px; font-weight:600;"><i class="fas fa-check-circle"></i> Köszönjük! 24 órán belül jelentkezünk.</div>
                     </form>
-                    <div class="success-message" id="successMessage"><i class="fas fa-check-circle"></i> Köszönjük! Hamarosan jelentkezünk.</div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="quick-actions" id="actions">
-        <div class="container">
-            <h2 class="section-title">Gyors műveletek</h2>
+        <div class="container" style="text-align:center;">
+            <span class="section-badge">GYORS MŰVELETEK</span>
+            <h2 class="section-title">Intézze gyorsan</h2>
             <div class="actions-grid">
-                <div class="action-card" id="emailAction"><div class="action-icon"><i class="fas fa-envelope"></i></div><h3>Email küldés</h3><p>Közvetlen email a czibolyafestes@gmail.com címre.</p></div>
-                <div class="action-card" id="estimateAction"><div class="action-icon"><i class="fas fa-clipboard-list"></i></div><h3>Felmérés kérése</h3><p>Ingyenes helyszíni felmérés és árajánlat.</p></div>
-                <div class="action-card" id="facebookAction"><div class="action-icon"><i class="fab fa-facebook"></i></div><h3>Facebook oldal</h3><p>Kövessen minket, nézze meg referenciáinkat.</p></div>
-                <div class="action-card" id="callAction"><div class="action-icon"><i class="fas fa-phone"></i></div><h3>Azonnali hívás</h3><p>+36 70 500 9471 – hívjon bizalommal!</p></div>
+                <div class="action-card" id="emailAction"><i class="fas fa-envelope"></i><h3>Email küldése</h3></div>
+                <div class="action-card" id="estimateAction"><i class="fas fa-clipboard-list"></i><h3>Felmérés kérése</h3></div>
+                <div class="action-card" id="facebookAction"><i class="fab fa-facebook"></i><h3>Facebook oldal</h3></div>
+                <div class="action-card" id="callAction"><i class="fas fa-phone"></i><h3>Azonnali hívás</h3></div>
             </div>
         </div>
     </section>
 
     <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Ügyfeleink mondták</h2>
-            <div class="testimonial-card">
-                <div class="testimonial-text">"Czibolyafestéssel festettettem ki a házunkat Ecséden. Gyors, precíz munka, gyönyörű lett a végeredmény. Az árajánlat korrekt volt, és minden úgy történt, ahogy megbeszéltük. Csak ajánlani tudom!"</div>
-                <div class="testimonial-author">
-                    <div class="author-avatar">KJ</div>
-                    <div><h4>Kovács János</h4><div style="color:#7f8c8d;">Ecséd</div></div>
-                </div>
+        <div class="container" style="text-align:center;">
+            <span class="section-badge">VÉLEMÉNYEK</span>
+            <h2 class="section-title">Ügyfeleink szerint</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Az egész házat kifestették nálunk Ecséden. Precíz, tiszta munka, határidőre. Csak ajánlani tudom!"</p><strong>Kovács János</strong><br><small>Ecséd</small></div>
+                <div class="testimonial-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Homlokzatfestést végeztek Hatvanban. Gyönyörű lett, és az ár is teljesen korrekt volt. Máskor is őket hívom."</p><strong>Nagy Andrea</strong><br><small>Hatvan</small></div>
             </div>
         </div>
     </section>
@@ -695,81 +649,41 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <div class="footer-logo">CZIBOLYA<span>FESTÉS</span></div>
-                    <p>Professzionális festői munkák 15 év tapasztalattal Heves megyében. Beltéri és kültéri festés, tapétázás.</p>
-                </div>
-                <div>
-                    <h3>Szolgáltatások</h3>
-                    <ul style="list-style:none; opacity:0.8;">
-                        <li>Beltéri falfestés</li><li>Kültéri homlokzatfestés</li><li>Tapétázás, glettelés</li><li>Felület előkészítés</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kapcsolat</h3>
-                    <p><i class="fas fa-phone"></i> +36 70 500 9471</p>
-                    <p><i class="fas fa-envelope"></i> czibolyafestes@gmail.com</p>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
-                    </div>
-                </div>
+                <div><div class="logo" style="color:white; margin-bottom:16px;">CZIBOLYA<span>FESTÉS</span></div><p>Professzionális festő Ecséden, Hatvanban, Gyöngyösön. Minőség, garancia, megbízhatóság.</p></div>
+                <div><h4 style="color:white; margin-bottom:16px;">Szolgáltatások</h4><ul style="list-style:none; opacity:0.8;"><li>Beltéri festés</li><li>Kültéri festés</li><li>Tapétázás</li></ul></div>
+                <div><h4 style="color:white; margin-bottom:16px;">Kapcsolat</h4><p>+36 70 500 9471</p><p>czibolyafestes@gmail.com</p></div>
             </div>
-            <div class="copyright">&copy; 2025 Czibolyafestés. Minden jog fenntartva. | Ecséd, Hatvan, Gyöngyös festője.</div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:25px; text-align:center; opacity:0.7;">© 2025 Czibolyafestés. Minden jog fenntartva.</div>
         </div>
     </footer>
 
     <script>
-        (function() {
-            // Mobil menü
-            const menuBtn = document.getElementById('mobileMenuBtn');
-            const navMenu = document.getElementById('navMenu');
-            if (menuBtn && navMenu) {
-                menuBtn.addEventListener('click', () => navMenu.classList.toggle('active'));
-                document.querySelectorAll('.nav-menu a').forEach(link => {
-                    link.addEventListener('click', () => navMenu.classList.remove('active'));
-                });
-            }
+        document.getElementById('mobileMenuBtn').addEventListener('click', ()=> document.getElementById('navMenu').classList.toggle('active'));
+        document.querySelectorAll('.nav-menu a').forEach(l=> l.addEventListener('click', ()=> document.getElementById('navMenu').classList.remove('active')));
+        document.getElementById('emailAction').addEventListener('click', ()=> window.location.href='mailto:czibolyafestes@gmail.com');
+        document.getElementById('estimateAction').addEventListener('click', ()=> document.getElementById('contact').scrollIntoView({behavior:'smooth'}));
+        document.getElementById('facebookAction').addEventListener('click', ()=> window.open('https://facebook.com/','_blank'));
+        document.getElementById('callAction').addEventListener('click', ()=> window.location.href='tel:+36705009471');
 
-            // Gyorsművelet kártyák
-            document.getElementById('emailAction')?.addEventListener('click', () => window.location.href = 'mailto:czibolyafestes@gmail.com');
-            document.getElementById('estimateAction')?.addEventListener('click', () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }));
-            document.getElementById('facebookAction')?.addEventListener('click', () => window.open('https://facebook.com/', '_blank'));
-            document.getElementById('callAction')?.addEventListener('click', () => window.location.href = 'tel:+36705009471');
-
-            // EmailJS űrlap kezelés
-            const form = document.getElementById('contactForm');
-            const loader = document.getElementById('formLoader');
-            const successMsg = document.getElementById('successMessage');
-
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    loader.style.display = 'block';
-                    successMsg.style.display = 'none';
-
-                    const templateParams = {
-                        from_name: document.getElementById('name').value,
-                        reply_to: document.getElementById('email').value,
-                        phone: document.getElementById('phone').value,
-                        location: document.getElementById('location').value,
-                        message: document.getElementById('message').value
-                    };
-
-                    emailjs.send('service_czibolyafestes', 'template_contact', templateParams)
-                        .then(() => {
-                            loader.style.display = 'none';
-                            successMsg.style.display = 'block';
-                            form.reset();
-                            setTimeout(() => { successMsg.style.display = 'none'; }, 6000);
-                        }, (error) => {
-                            loader.style.display = 'none';
-                            alert('Hiba történt az üzenet küldése során. Kérjük, hívjon minket a +36 70 500 9471 számon.');
-                            console.error('EmailJS hiba:', error);
-                        });
-                });
-            }
-        })();
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            document.getElementById('formLoader').style.display='block';
+            emailjs.send('service_czibolyafestes','template_contact',{
+                from_name: document.getElementById('name').value,
+                reply_to: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                location: document.getElementById('location').value,
+                message: document.getElementById('message').value
+            }).then(()=>{
+                document.getElementById('formLoader').style.display='none';
+                document.getElementById('successMessage').style.display='block';
+                form.reset();
+            }, ()=>{
+                alert('Hiba történt. Kérjük hívjon: +36 70 500 9471');
+                document.getElementById('formLoader').style.display='none';
+            });
+        });
     </script>
 </body>
 </html>
