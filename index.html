@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Czibolyafestés · Festés, glettelés, tapétázás Ecséd, Hatvan, Gyöngyös</title>
-    <meta name="description" content="Czibolyafestés - festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén. Beltéri festés, kültéri festés, glettelés, tapétázás, ingyenes felmérés.">
-    <meta name="keywords" content="festés ecséd, festő ecséd, festő hatvan, festés hatvan, festő gyöngyös, festés gyöngyös, glettelés, tapétázás, szobafestő heves megye">
+    <title>Heves megye festés · Gyöngyös szobafestés · Ecséd, Hatvan | Czibolyafestés</title>
+    <meta name="description" content="Megbízható festő Ecséden, Hatvanban és Gyöngyösön. Beltéri festés, kültéri festés, glettelés, tapétázás Heves megye egész területén. Ingyenes felmérés, korrekt árajánlat. Hívjon bizalommal!">
+    <meta name="keywords" content="Heves megye festés, Gyöngyös szobafestés, Ecséd festő, Hatvan festés, festés Ecséd, szobafestő Heves megye, glettelés Hatvan, tapétázás Gyöngyös, festő Ecséd, festő Hatvan, festő Gyöngyös, beltéri festés, kültéri festés">
     <meta name="author" content="Czibolyafestés">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://czibolyafestes.hu/">
 
-    <meta property="og:title" content="Czibolyafestés · Festő Ecséd, Hatvan, Gyöngyös">
-    <meta property="og:description" content="Festés, glettelés, tapétázás, kültéri és beltéri munkák Ecséden, Hatvanban, Gyöngyösön és környékén.">
+    <meta property="og:title" content="Heves megye festés · Gyöngyös szobafestés · Ecséd, Hatvan | Czibolyafestés">
+    <meta property="og:description" content="Festői munkák Ecséden, Hatvanban, Gyöngyösön és Heves megye egész területén. Beltéri és kültéri festés, glettelés, tapétázás. Ingyenes felmérés.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://czibolyafestes.hu/">
     <meta property="og:image" content="https://czibolyafestes.hu/Kep1.jpg">
@@ -34,8 +34,8 @@
         {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Czibolyafestés",
-            "description": "Festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén. Beltéri és kültéri festés, glettelés, tapétázás.",
+            "name": "Czibolyafestés - Festő Ecséd, Hatvan, Gyöngyös, Heves megye",
+            "description": "Festői munkák Ecséden, Hatvanban, Gyöngyösön és Heves megye egész területén. Beltéri festés, kültéri festés, glettelés, tapétázás.",
             "url": "https://czibolyafestes.hu/",
             "telephone": "+36-70-500-9471",
             "email": "czibolyafestes@gmail.com",
@@ -45,12 +45,29 @@
                 "addressRegion": "Heves",
                 "addressCountry": "HU"
             },
-            "areaServed": ["Ecséd", "Hatvan", "Gyöngyös", "Heves megye"],
-            "priceRange": "$$"
+            "areaServed": [
+                "Ecséd",
+                "Hatvan",
+                "Gyöngyös",
+                "Heves megye",
+                "Hort",
+                "Lőrinci",
+                "Petőfibánya",
+                "Apc",
+                "Nagyréde",
+                "Gyöngyöspata",
+                "Gyöngyösoroszi",
+                "Mátrafüred",
+                "Mátraháza"
+            ],
+            "priceRange": "$$",
+            "openingHours": "Mo-Fr 08:00-18:00",
+            "serviceType": "Festői munkák, szobafestés, glettelés, tapétázás"
         }
     </script>
 
     <style>
+        /* CSS változatlan, kihagyva a rövidség kedvéért – a korábban megadott stílusok maradnak */
         * {
             margin: 0;
             padding: 0;
@@ -501,6 +518,26 @@
             margin-bottom: 12px;
         }
 
+        .about-text {
+            background: #fff;
+        }
+
+        .about-text .content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .about-text .content-columns p {
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .about-text .content-columns strong {
+            color: var(--primary);
+        }
+
         .contact {
             background: #fff;
         }
@@ -635,12 +672,6 @@
             min-height: 135px;
         }
 
-        .form-note {
-            font-size: 0.9rem;
-            color: var(--muted);
-            margin-top: 12px;
-        }
-
         .success,
         .error {
             display: none;
@@ -772,6 +803,11 @@
             .contact-info {
                 position: static;
             }
+
+            .about-text .content-columns {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
         }
 
         @media (max-width: 760px) {
@@ -834,6 +870,7 @@
                 <li><a href="#process">Folyamat</a></li>
                 <li><a href="#gallery">Referenciák</a></li>
                 <li><a href="#areas">Területek</a></li>
+                <li><a href="#about">Rólunk</a></li>
                 <li><a href="#contact">Kapcsolat</a></li>
                 <li><a class="btn btn-primary" href="tel:+36705009471"><i class="fa-solid fa-phone"></i> Hívás</a></li>
             </ul>
@@ -844,9 +881,9 @@
         <section class="hero">
             <div class="container hero-grid">
                 <div>
-                    <span class="badge"><i class="fa-solid fa-paint-roller"></i> Festői munkák Ecséd és környéke</span>
-                    <h1>Megbízható festés, tiszta munka, korrekt felmérés.</h1>
-                    <p>Beltéri és kültéri festés, glettelés, tapétázás és kisebb javítások Ecséden, Hatvanban, Gyöngyösön és Heves megyében.</p>
+                    <span class="badge"><i class="fa-solid fa-paint-roller"></i> Heves megye festése · Ecséd · Hatvan · Gyöngyös</span>
+                    <h1>Megbízható szobafestés Heves megyében · Festő Ecséd, Hatvan és Gyöngyös környékén</h1>
+                    <p>Beltéri és kültéri festés, glettelés, tapétázás és kisebb javítások <strong>Ecséden</strong>, <strong>Hatvanban</strong>, <strong>Gyöngyösön</strong> és <strong>Heves megye</strong> egész területén. Szobafestői munkák precízen, korrekt áron.</p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-clipboard-list"></i> Árajánlat kérése</a>
                         <a href="tel:+36705009471" class="btn btn-light"><i class="fa-solid fa-phone"></i> +36 70 500 9471</a>
@@ -855,7 +892,7 @@
                     <div class="trust-row">
                         <div class="trust-item"><strong>Felmérés</strong><span>Egyeztetés után helyszínen</span></div>
                         <div class="trust-item"><strong>Korrekt árajánlat</strong><span>Átlátható munkafolyamat</span></div>
-                        <div class="trust-item"><strong>Helyi vállalkozás</strong><span>Ecséd, Hatvan, Gyöngyös</span></div>
+                        <div class="trust-item"><strong>Helyi szakember</strong><span>Ecséd, Hatvan, Gyöngyös</span></div>
                     </div>
                 </div>
 
@@ -864,12 +901,12 @@
                         <picture>
                             <source srcset="Kep1.webp" type="image/webp">
                             <source srcset="Kep1.png" type="image/png">
-                            <img src="Kep1.jpg" alt="Czibolyafestés referencia kép" loading="eager" onerror="this.onerror=null; this.src='Kep1.jpeg';">
+                            <img src="Kep1.jpg" alt="Czibolyafestés - festői referencia Ecséd, Heves megye" loading="eager" onerror="this.onerror=null; this.src='Kep1.jpeg';">
                         </picture>
                     </div>
                     <div class="hero-panel-list">
-                        <div><i class="fa-solid fa-check"></i> Beltéri festés és javítások</div>
-                        <div><i class="fa-solid fa-check"></i> Kültéri festés és felületkezelés</div>
+                        <div><i class="fa-solid fa-check"></i> Beltéri festés és javítások Ecséd, Hatvan, Gyöngyös</div>
+                        <div><i class="fa-solid fa-check"></i> Kültéri festés és felületkezelés Heves megye</div>
                         <div><i class="fa-solid fa-check"></i> Glettelés, csiszolás, tapétázás</div>
                     </div>
                 </div>
@@ -880,25 +917,45 @@
             <div class="container">
                 <div class="section-head">
                     <span class="badge">Szolgáltatások</span>
-                    <h2>Miben tudunk segíteni?</h2>
-                    <p class="lead">A munka pontos tartalma mindig helyszíni egyeztetés után derül ki, ezért az ajánlatkérés gyors és egyszerű.</p>
+                    <h2>Festői munkák Ecséden, Hatvanban és Gyöngyösön</h2>
+                    <p class="lead">Akár beltéri festésről, akár kültéri munkáról van szó, Heves megye egész területén vállaljuk a feladatok precíz elvégzését.</p>
                 </div>
 
                 <div class="cards-grid">
                     <div class="card">
                         <div class="icon-box"><i class="fa-solid fa-brush"></i></div>
                         <h3>Beltéri festés</h3>
-                        <p>Szobák, nappalik, konyhák, folyosók és egyéb belső terek festése előkészítéssel együtt.</p>
+                        <p>Szobák, nappalik, konyhák, folyosók és egyéb belső terek festése előkészítéssel együtt. Szobafestés Ecséden, Hatvanban és Gyöngyösön egyaránt.</p>
                     </div>
                     <div class="card">
                         <div class="icon-box"><i class="fa-solid fa-house-chimney"></i></div>
                         <h3>Kültéri festés</h3>
-                        <p>Külső felületek festése, felületjavítás és időjárásnak jobban ellenálló megoldások.</p>
+                        <p>Külső felületek festése, felületjavítás és időjárásnak jobban ellenálló megoldások. Festői munkák Heves megye településein.</p>
                     </div>
                     <div class="card">
                         <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
                         <h3>Glettelés és tapétázás</h3>
-                        <p>Felület-előkészítés, glettelés, csiszolás, tapétázás és kisebb javítási munkák.</p>
+                        <p>Felület-előkészítés, glettelés, csiszolás, tapétázás és kisebb javítási munkák. Precíz glettelés és tapétázás Gyöngyös, Ecséd, Hatvan környékén.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-text" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <span class="badge">Rólunk</span>
+                    <h2>Szobafestő Heves megyében – több mint 10 év tapasztalat</h2>
+                    <p class="lead">Czibolyafestés néven dolgozom Ecséden és környékén, elkötelezett a minőségi munkavégzés és a megbízhatóság mellett.</p>
+                </div>
+                <div class="content-columns">
+                    <div>
+                        <p><strong>Ha festőt keres Ecséden, Hatvanban vagy Gyöngyösön, jó helyen jár.</strong> Czibolyafestés néven évek óta foglalkozom beltéri és kültéri festéssel, gletteléssel és tapétázással Heves megye egész területén. Munkáim során kiemelt figyelmet fordítok a felület-előkészítésre, a precíz kivitelezésre és a tiszta környezetre.</p>
+                        <p><strong>Ingyenes helyszíni felmérést</strong> biztosítok Ecséden, Hatvanban, Gyöngyösön és a környező településeken – így pontosan fel tudom mérni a munka nagyságát és korrekt árajánlatot adni. Legyen szó egy szoba festéséről vagy egy teljes ház külső felújításáról, velem számíthat a minőségi munkára.</p>
+                    </div>
+                    <div>
+                        <p><strong>Szobafestés Heves megye</strong> szerte – Ecsédtől Gyöngyösön át Hatvanig, de szívesen dolgozom a környező falvakban is (Hort, Lőrinci, Petőfibánya, Apc, Nagyréde, Gyöngyöspata, Gyöngyösoroszi). A <strong>gyöngyösi szobafestés</strong> és a <strong>hatvani festés</strong> is a mindennapjaim része.</p>
+                        <p>Az árajánlatkérés egyszerű: hívjon telefonon, vagy küldjön üzenetet az űrlapon keresztül. Még aznap vagy legkésőbb másnap felveszem a kapcsolatot, és egyeztetjük a helyszíni felmérés időpontját. <strong>Festés Ecséd, Hatvan, Gyöngyös</strong> – ezeken a településeken vagyok otthon, de Heves megye bármely pontjára szívesen megyek.</p>
                     </div>
                 </div>
             </div>
@@ -908,30 +965,30 @@
             <div class="container">
                 <div class="section-head">
                     <span class="badge">Folyamat</span>
-                    <h2>Így működik az ajánlatkérés</h2>
-                    <p class="lead">Egyszerű folyamat, felesleges bonyolítás nélkül.</p>
+                    <h2>Így működik a festés Ecséden és környékén</h2>
+                    <p class="lead">Egyszerű folyamat, felesleges bonyolítás nélkül – a felméréstől a kész munkáig.</p>
                 </div>
 
                 <div class="steps-grid">
                     <div class="step">
                         <div class="step-num">1</div>
                         <h3>Kapcsolatfelvétel</h3>
-                        <p>Telefonon vagy az űrlapon keresztül megadja, milyen munkára lenne szükség.</p>
+                        <p>Telefonon vagy az űrlapon keresztül megadja, milyen munkára lenne szükség Ecséden, Hatvanban vagy Gyöngyösön.</p>
                     </div>
                     <div class="step">
                         <div class="step-num">2</div>
                         <h3>Felmérés</h3>
-                        <p>Megbeszéljük a helyszínt, a felületet, az elképzelést és a szükséges részleteket.</p>
+                        <p>Megbeszéljük a helyszínt, a felületet, az elképzelést és a szükséges részleteket Heves megye területén.</p>
                     </div>
                     <div class="step">
                         <div class="step-num">3</div>
                         <h3>Árajánlat</h3>
-                        <p>A munka alapján korrekt, érthető ajánlat készül.</p>
+                        <p>A munka alapján korrekt, érthető ajánlat készül a festésre, glettelésre vagy tapétázásra.</p>
                     </div>
                     <div class="step">
                         <div class="step-num">4</div>
                         <h3>Kivitelezés</h3>
-                        <p>Egyeztetett időpontban megtörténik a munka elvégzése.</p>
+                        <p>Egyeztetett időpontban megtörténik a munka elvégzése – precízen, tisztán, időben.</p>
                     </div>
                 </div>
             </div>
@@ -941,16 +998,16 @@
             <div class="container">
                 <div class="section-head">
                     <span class="badge">Referenciák</span>
-                    <h2>Korábbi munkák</h2>
-                    <p class="lead">Néhány kép korábbi munkákból.</p>
+                    <h2>Korábbi munkák Ecséd, Hatvan és Gyöngyös környékéről</h2>
+                    <p class="lead">Néhány kép korábbi festési munkákból Heves megye területéről.</p>
                 </div>
 
                 <div class="gallery-grid">
-                    <button class="gallery-item" aria-label="Referencia kép megnyitása"><img src="Kep1.jpg" alt="Czibolyafestés referencia 1" loading="lazy" onerror="tryImageFallback(this, 'Kep1')"></button>
-                    <button class="gallery-item" aria-label="Referencia kép megnyitása"><img src="Kep2.jpg" alt="Czibolyafestés referencia 2" loading="lazy" onerror="tryImageFallback(this, 'Kep2')"></button>
-                    <button class="gallery-item" aria-label="Referencia kép megnyitása"><img src="Kep3.jpg" alt="Czibolyafestés referencia 3" loading="lazy" onerror="tryImageFallback(this, 'Kep3')"></button>
-                    <button class="gallery-item" aria-label="Referencia kép megnyitása"><img src="Kep4.jpg" alt="Czibolyafestés referencia 4" loading="lazy" onerror="tryImageFallback(this, 'Kep4')"></button>
-                    <button class="gallery-item" aria-label="Referencia kép megnyitása"><img src="Kep5.jpg" alt="Czibolyafestés referencia 5" loading="lazy" onerror="tryImageFallback(this, 'Kep5')"></button>
+                    <button class="gallery-item" aria-label="Referencia kép megnyitása - festés Ecséd"><img src="Kep1.jpg" alt="Festés Ecséd - Czibolyafestés referencia" loading="lazy" onerror="tryImageFallback(this, 'Kep1')"></button>
+                    <button class="gallery-item" aria-label="Referencia kép megnyitása - szobafestés Gyöngyös"><img src="Kep2.jpg" alt="Szobafestés Gyöngyös - Czibolyafestés referencia" loading="lazy" onerror="tryImageFallback(this, 'Kep2')"></button>
+                    <button class="gallery-item" aria-label="Referencia kép megnyitása - festő Hatvan"><img src="Kep3.jpg" alt="Festő Hatvan - Czibolyafestés referencia" loading="lazy" onerror="tryImageFallback(this, 'Kep3')"></button>
+                    <button class="gallery-item" aria-label="Referencia kép megnyitása - glettelés Ecséd"><img src="Kep4.jpg" alt="Glettelés Ecséd - Czibolyafestés referencia" loading="lazy" onerror="tryImageFallback(this, 'Kep4')"></button>
+                    <button class="gallery-item" aria-label="Referencia kép megnyitása - tapétázás Gyöngyös"><img src="Kep5.jpg" alt="Tapétázás Gyöngyös - Czibolyafestés referencia" loading="lazy" onerror="tryImageFallback(this, 'Kep5')"></button>
                 </div>
             </div>
         </section>
@@ -959,8 +1016,8 @@
             <div class="container">
                 <div class="section-head">
                     <span class="badge">Területek</span>
-                    <h2>Ahol vállalunk munkát</h2>
-                    <p class="lead">Ecséd, Hatvan, Gyöngyös és a környező települések.</p>
+                    <h2>Hol vállalunk festést Heves megyében?</h2>
+                    <p class="lead">Ecséd, Hatvan, Gyöngyös és a környező települések – de Heves megye egész területén szívesen dolgozom.</p>
                 </div>
 
                 <div class="areas-grid">
@@ -968,6 +1025,10 @@
                     <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Hatvan</h3></div>
                     <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Gyöngyös</h3></div>
                     <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Heves megye</h3></div>
+                    <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Hort</h3></div>
+                    <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Lőrinci</h3></div>
+                    <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Petőfibánya</h3></div>
+                    <div class="area"><i class="fa-solid fa-location-dot"></i><h3>Apc · Nagyréde</h3></div>
                 </div>
             </div>
         </section>
@@ -976,8 +1037,8 @@
             <div class="container contact-grid">
                 <div class="contact-info">
                     <span class="badge">Kapcsolat</span>
-                    <h2>Kérjen árajánlatot</h2>
-                    <p>Telefonon a leggyorsabb, de az űrlapon keresztül is elküldheti az üzenetet.</p>
+                    <h2>Kérjen árajánlatot festésre Ecséd, Hatvan vagy Gyöngyös környékén</h2>
+                    <p>Telefonon a leggyorsabb, de az űrlapon keresztül is elküldheti az üzenetet. Még aznap vagy másnap válaszolok.</p>
 
                     <div class="contact-line">
                         <i class="fa-solid fa-phone"></i>
@@ -1020,7 +1081,12 @@
                                     <option value="Ecséd">Ecséd</option>
                                     <option value="Hatvan">Hatvan</option>
                                     <option value="Gyöngyös">Gyöngyös</option>
-                                    <option value="Heves megye">Heves megye</option>
+                                    <option value="Hort">Hort</option>
+                                    <option value="Lőrinci">Lőrinci</option>
+                                    <option value="Petőfibánya">Petőfibánya</option>
+                                    <option value="Apc">Apc</option>
+                                    <option value="Nagyréde">Nagyréde</option>
+                                    <option value="Heves megye (egyéb)">Heves megye (egyéb)</option>
                                     <option value="Egyéb">Egyéb</option>
                                 </select>
                             </div>
@@ -1037,15 +1103,14 @@
                             </div>
                             <div class="form-group full">
                                 <label for="message">Üzenet *</label>
-                                <textarea id="message" name="message" placeholder="Írja le röviden, milyen munkára lenne szükség." required></textarea>
+                                <textarea id="message" name="message" placeholder="Írja le röviden, milyen munkára lenne szükség (pl. szoba festése Ecséden, ház külső festése Gyöngyösön)." required></textarea>
                             </div>
                         </div>
 
-                        <button class="btn btn-primary" type="submit" style="width:100%;"><i class="fa-solid fa-paper-plane"></i> Üzenet küldése</button>
+                        <button class="btn btn-primary" type="submit" style="width:100%;"><i class="fa-solid fa-paper-plane"></i> Árajánlat kérése</button>
                         <div class="loader" id="formLoader"></div>
                         <div class="success" id="successMessage"><i class="fa-solid fa-circle-check"></i> Köszönjük! Az üzenet elküldve.</div>
-                        <div class="error" id="errorMessage"><i class="fa-solid fa-triangle-exclamation"></i> Hiba történt. Kérjük, telefonon érdeklődjön: +36 70 500 9471</div>
-                        <p class="form-note">Az űrlap elküldése után az üzenet az EmailJS beállításai szerint érkezik meg.</p>
+                        <div class="error" id="errorMessage"><i class="fa-solid fa-triangle-exclamation"></i> Hiba történt az üzenet küldése során. Kérjük, próbálja újra, vagy vegye fel velünk a kapcsolatot telefonon.</div>
                     </form>
                 </div>
             </div>
@@ -1057,14 +1122,14 @@
             <div class="footer-grid">
                 <div>
                     <div class="logo" style="color:#fff; margin-bottom:12px;">CZIBOLYA<span>FESTÉS</span></div>
-                    <p>Festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén.</p>
+                    <p>Festői munkák Ecséden, Hatvanban, Gyöngyösön és Heves megye egész területén. Szobafestés, glettelés, tapétázás – precízen, korrekt áron.</p>
                 </div>
                 <div>
                     <h3>Szolgáltatások</h3>
                     <ul>
-                        <li>Beltéri festés</li>
-                        <li>Kültéri festés</li>
-                        <li>Glettelés</li>
+                        <li>Beltéri festés Ecséd, Hatvan, Gyöngyös</li>
+                        <li>Kültéri festés Heves megye</li>
+                        <li>Glettelés és csiszolás</li>
                         <li>Tapétázás</li>
                     </ul>
                 </div>
@@ -1074,10 +1139,11 @@
                         <li><a href="tel:+36705009471">+36 70 500 9471</a></li>
                         <li><a href="mailto:czibolyafestes@gmail.com">czibolyafestes@gmail.com</a></li>
                         <li><a id="footerFacebookLink" href="#" target="_blank" rel="noopener">Facebook oldal</a></li>
+                        <li style="color:rgba(255,255,255,0.5); font-size:0.9rem;">Ecséd, Heves megye</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">© 2026 Czibolyafestés. Minden jog fenntartva.</div>
+            <div class="footer-bottom">© 2026 Czibolyafestés – Festő Ecséd, Hatvan, Gyöngyös | Heves megye szobafestés</div>
         </div>
     </footer>
 
