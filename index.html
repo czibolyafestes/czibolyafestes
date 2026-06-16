@@ -24,31 +24,30 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="theme-color" content="#0f172a">
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <script>
-        // FONTOS: ezt csak akkor hagyd így, ha az EmailJS-ben tényleg ez a Public Key.
-        // Ha nem működik az űrlap, EmailJS Dashboard -> Account -> Public Key.
         emailjs.init('osibmMn01_OQsvgtc');
     </script>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Czibolyafestés",
-        "description": "Festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén. Beltéri és kültéri festés, glettelés, tapétázás.",
-        "url": "https://czibolyafestes.hu/",
-        "telephone": "+36-70-500-9471",
-        "email": "czibolyafestes@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Ecséd",
-            "addressRegion": "Heves",
-            "addressCountry": "HU"
-        },
-        "areaServed": ["Ecséd", "Hatvan", "Gyöngyös", "Heves megye"],
-        "priceRange": "$$"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Czibolyafestés",
+            "description": "Festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén. Beltéri és kültéri festés, glettelés, tapétázás.",
+            "url": "https://czibolyafestes.hu/",
+            "telephone": "+36-70-500-9471",
+            "email": "czibolyafestes@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ecséd",
+                "addressRegion": "Heves",
+                "addressCountry": "HU"
+            },
+            "areaServed": ["Ecséd", "Hatvan", "Gyöngyös", "Heves megye"],
+            "priceRange": "$$"
+        }
     </script>
 
     <style>
@@ -130,7 +129,9 @@
             margin-bottom: 16px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: var(--primary);
             letter-spacing: -0.035em;
             line-height: 1.12;
@@ -181,9 +182,9 @@
         }
 
         .btn-light {
-            background: rgba(255,255,255,0.12);
+            background: rgba(255, 255, 255, 0.12);
             color: #fff;
-            border: 1px solid rgba(255,255,255,0.22);
+            border: 1px solid rgba(255, 255, 255, 0.22);
         }
 
         .btn-light:hover {
@@ -206,9 +207,9 @@
             position: sticky;
             top: 0;
             z-index: 999;
-            background: rgba(255,255,255,0.86);
+            background: rgba(255, 255, 255, 0.86);
             backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(226,232,240,0.9);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.9);
         }
 
         .nav {
@@ -267,7 +268,7 @@
             height: 520px;
             right: -180px;
             top: -160px;
-            background: radial-gradient(circle, rgba(225,29,72,0.35), transparent 68%);
+            background: radial-gradient(circle, rgba(225, 29, 72, 0.35), transparent 68%);
         }
 
         .hero::after {
@@ -277,7 +278,7 @@
             height: 360px;
             left: -120px;
             bottom: -150px;
-            background: radial-gradient(circle, rgba(245,158,11,0.22), transparent 70%);
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.22), transparent 70%);
         }
 
         .hero-grid {
@@ -291,7 +292,7 @@
 
         .hero p {
             margin: 22px 0 32px;
-            color: rgba(255,255,255,0.78);
+            color: rgba(255, 255, 255, 0.78);
             font-size: 1.16rem;
             max-width: 640px;
         }
@@ -310,8 +311,8 @@
         }
 
         .trust-item {
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 16px;
             border-radius: 16px;
         }
@@ -323,13 +324,13 @@
         }
 
         .trust-item span {
-            color: rgba(255,255,255,0.65);
+            color: rgba(255, 255, 255, 0.65);
             font-size: 0.9rem;
         }
 
         .hero-panel {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.14);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
             border-radius: 28px;
             padding: 28px;
             box-shadow: var(--shadow-lg);
@@ -339,7 +340,7 @@
             height: 310px;
             border-radius: 22px;
             overflow: hidden;
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             margin-bottom: 18px;
         }
 
@@ -358,7 +359,7 @@
             display: flex;
             gap: 12px;
             align-items: center;
-            color: rgba(255,255,255,0.86);
+            color: rgba(255, 255, 255, 0.86);
         }
 
         .hero-panel-list i {
@@ -383,14 +384,14 @@
         .card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-md);
-            border-color: rgba(225,29,72,0.18);
+            border-color: rgba(225, 29, 72, 0.18);
         }
 
         .icon-box {
             width: 58px;
             height: 58px;
             border-radius: 18px;
-            background: rgba(225,29,72,0.09);
+            background: rgba(225, 29, 72, 0.09);
             color: var(--secondary);
             display: grid;
             place-items: center;
@@ -457,7 +458,8 @@
             cursor: pointer;
         }
 
-        .gallery-item:nth-child(1), .gallery-item:nth-child(4) {
+        .gallery-item:nth-child(1),
+        .gallery-item:nth-child(4) {
             grid-column: span 2;
         }
 
@@ -525,7 +527,7 @@
         }
 
         .contact-info p {
-            color: rgba(255,255,255,0.72);
+            color: rgba(255, 255, 255, 0.72);
             margin-bottom: 24px;
         }
 
@@ -534,7 +536,7 @@
             gap: 14px;
             align-items: flex-start;
             padding: 18px 0;
-            border-top: 1px solid rgba(255,255,255,0.12);
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
         }
 
         .contact-line i {
@@ -547,8 +549,9 @@
             color: #fff;
         }
 
-        .contact-line span, .contact-line a {
-            color: rgba(255,255,255,0.78);
+        .contact-line span,
+        .contact-line a {
+            color: rgba(255, 255, 255, 0.78);
         }
 
         .social-row {
@@ -564,9 +567,9 @@
             gap: 10px;
             padding: 12px 16px;
             border-radius: 999px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             color: #fff;
-            border: 1px solid rgba(255,255,255,0.14);
+            border: 1px solid rgba(255, 255, 255, 0.14);
             font-weight: 800;
             transition: var(--transition);
         }
@@ -605,7 +608,9 @@
             color: var(--primary);
         }
 
-        input, select, textarea {
+        input,
+        select,
+        textarea {
             width: 100%;
             padding: 14px 16px;
             border: 1px solid var(--border);
@@ -616,10 +621,12 @@
             transition: var(--transition);
         }
 
-        input:focus, select:focus, textarea:focus {
+        input:focus,
+        select:focus,
+        textarea:focus {
             outline: 0;
-            border-color: rgba(225,29,72,0.65);
-            box-shadow: 0 0 0 4px rgba(225,29,72,0.1);
+            border-color: rgba(225, 29, 72, 0.65);
+            box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.1);
             background: #fff;
         }
 
@@ -634,7 +641,8 @@
             margin-top: 12px;
         }
 
-        .success, .error {
+        .success,
+        .error {
             display: none;
             margin-top: 18px;
             padding: 14px 16px;
@@ -664,12 +672,14 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         footer {
             background: var(--primary);
-            color: rgba(255,255,255,0.72);
+            color: rgba(255, 255, 255, 0.72);
             padding: 58px 0 26px;
         }
 
@@ -692,7 +702,7 @@
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 22px;
             text-align: center;
             font-size: 0.92rem;
@@ -750,7 +760,8 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .gallery-item:nth-child(1), .gallery-item:nth-child(4) {
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(4) {
                 grid-column: span 1;
             }
 
@@ -814,9 +825,6 @@
     </style>
 </head>
 <body>
-    <!-- CSERÉLD KI ERRE A SAJÁT FACEBOOK OLDALAD LINKJÉT -->
-    <!-- A JavaScript alján is megtalálod: FACEBOOK_URL -->
-
     <header>
         <div class="container nav">
             <a class="logo" href="#top">CZIBOLYA<span>FESTÉS</span></a>
@@ -1001,167 +1009,4 @@
                                 <label for="email">Email *</label>
                                 <input id="email" name="email" type="email" autocomplete="email" required>
                             </div>
-                            <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input id="phone" name="phone" type="tel" autocomplete="tel">
-                            </div>
-                            <div class="form-group">
-                                <label for="location">Helyszín</label>
-                                <select id="location" name="location">
-                                    <option value="">Válasszon...</option>
-                                    <option value="Ecséd">Ecséd</option>
-                                    <option value="Hatvan">Hatvan</option>
-                                    <option value="Gyöngyös">Gyöngyös</option>
-                                    <option value="Heves megye">Heves megye</option>
-                                    <option value="Egyéb">Egyéb</option>
-                                </select>
-                            </div>
-                            <div class="form-group full">
-                                <label for="service">Milyen munkáról lenne szó?</label>
-                                <select id="service" name="service">
-                                    <option value="">Válasszon...</option>
-                                    <option value="Beltéri festés">Beltéri festés</option>
-                                    <option value="Kültéri festés">Kültéri festés</option>
-                                    <option value="Glettelés">Glettelés</option>
-                                    <option value="Tapétázás">Tapétázás</option>
-                                    <option value="Egyéb">Egyéb</option>
-                                </select>
-                            </div>
-                            <div class="form-group full">
-                                <label for="message">Üzenet *</label>
-                                <textarea id="message" name="message" placeholder="Írja le röviden, milyen munkára lenne szükség." required></textarea>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-primary" type="submit" style="width:100%;"><i class="fa-solid fa-paper-plane"></i> Üzenet küldése</button>
-                        <div class="loader" id="formLoader"></div>
-                        <div class="success" id="successMessage"><i class="fa-solid fa-circle-check"></i> Köszönjük! Az üzenet elküldve.</div>
-                        <div class="error" id="errorMessage"><i class="fa-solid fa-triangle-exclamation"></i> Hiba történt. Kérjük, telefonon érdeklődjön: +36 70 500 9471</div>
-                        <p class="form-note">Az űrlap elküldése után az üzenet az EmailJS beállításai szerint érkezik meg.</p>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="logo" style="color:#fff; margin-bottom:12px;">CZIBOLYA<span>FESTÉS</span></div>
-                    <p>Festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén.</p>
-                </div>
-                <div>
-                    <h3>Szolgáltatások</h3>
-                    <ul>
-                        <li>Beltéri festés</li>
-                        <li>Kültéri festés</li>
-                        <li>Glettelés</li>
-                        <li>Tapétázás</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kapcsolat</h3>
-                    <ul>
-                        <li><a href="tel:+36705009471">+36 70 500 9471</a></li>
-                        <li><a href="mailto:czibolyafestes@gmail.com">czibolyafestes@gmail.com</a></li>
-                        <li><a id="footerFacebookLink" href="#" target="_blank" rel="noopener">Facebook oldal</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">© 2026 Czibolyafestés. Minden jog fenntartva.</div>
-        </div>
-    </footer>
-
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-        <button type="button" id="closeLightbox" aria-label="Kép bezárása"><i class="fa-solid fa-xmark"></i></button>
-        <img id="lightboxImg" src="" alt="Megnyitott referencia kép">
-    </div>
-
-    <script>
-        // IDE ÍRD BE A SAJÁT FACEBOOK OLDALAD LINKJÉT
-        const FACEBOOK_URL = 'https://www.facebook.com/peter.czibolya.3';
-
-        document.getElementById('facebookLink').href = FACEBOOK_URL;
-        document.getElementById('footerFacebookLink').href = FACEBOOK_URL;
-
-        const menuBtn = document.getElementById('menuBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('active'));
-        });
-
-        function tryImageFallback(img, baseName) {
-            const extensions = ['png', 'jpeg', 'webp'];
-            const currentAttempt = Number(img.dataset.attempt || 0);
-
-            if (currentAttempt >= extensions.length) {
-                img.onerror = null;
-                img.alt = 'Referencia kép nem található';
-                return;
-            }
-
-            img.dataset.attempt = currentAttempt + 1;
-            img.src = baseName + '.' + extensions[currentAttempt];
-        }
-
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const closeLightbox = document.getElementById('closeLightbox');
-
-        document.querySelectorAll('.gallery-item img').forEach(img => {
-            img.addEventListener('click', () => {
-                lightboxImg.src = img.src;
-                lightbox.classList.add('active');
-                lightbox.setAttribute('aria-hidden', 'false');
-            });
-        });
-
-        closeLightbox.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-            lightbox.setAttribute('aria-hidden', 'true');
-        });
-
-        lightbox.addEventListener('click', (event) => {
-            if (event.target === lightbox) {
-                lightbox.classList.remove('active');
-                lightbox.setAttribute('aria-hidden', 'true');
-            }
-        });
-
-        const form = document.getElementById('contactForm');
-        const loader = document.getElementById('formLoader');
-        const successMessage = document.getElementById('successMessage');
-        const errorMessage = document.getElementById('errorMessage');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            loader.style.display = 'block';
-            successMessage.style.display = 'none';
-            errorMessage.style.display = 'none';
-
-            emailjs.send('czibolyafestes', 'template_dh68rhu', {
-                from_name: document.getElementById('name').value,
-                reply_to: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                location: document.getElementById('location').value,
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value
-            }).then(() => {
-                loader.style.display = 'none';
-                successMessage.style.display = 'block';
-                form.reset();
-            }).catch(() => {
-                loader.style.display = 'none';
-                errorMessage.style.display = 'block';
-            });
-        });
-    </script>
-</body>
-</html>
+                            <div
