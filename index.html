@@ -853,7 +853,7 @@
                     </div>
 
                     <div class="trust-row">
-                        <div class="trust-item"><strong>Ingyenes felmérés</strong><span>Egyeztetés után helyszínen</span></div>
+                        <div class="trust-item"><strong>Felmérés</strong><span>Egyeztetés után helyszínen</span></div>
                         <div class="trust-item"><strong>Korrekt árajánlat</strong><span>Átlátható munkafolyamat</span></div>
                         <div class="trust-item"><strong>Helyi vállalkozás</strong><span>Ecséd, Hatvan, Gyöngyös</span></div>
                     </div>
@@ -1009,4 +1009,166 @@
                                 <label for="email">Email *</label>
                                 <input id="email" name="email" type="email" autocomplete="email" required>
                             </div>
-                            <div
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input id="phone" name="phone" type="tel" autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Helyszín</label>
+                                <select id="location" name="location">
+                                    <option value="">Válasszon...</option>
+                                    <option value="Ecséd">Ecséd</option>
+                                    <option value="Hatvan">Hatvan</option>
+                                    <option value="Gyöngyös">Gyöngyös</option>
+                                    <option value="Heves megye">Heves megye</option>
+                                    <option value="Egyéb">Egyéb</option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="service">Milyen munkáról lenne szó?</label>
+                                <select id="service" name="service">
+                                    <option value="">Válasszon...</option>
+                                    <option value="Beltéri festés">Beltéri festés</option>
+                                    <option value="Kültéri festés">Kültéri festés</option>
+                                    <option value="Glettelés">Glettelés</option>
+                                    <option value="Tapétázás">Tapétázás</option>
+                                    <option value="Egyéb">Egyéb</option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="message">Üzenet *</label>
+                                <textarea id="message" name="message" placeholder="Írja le röviden, milyen munkára lenne szükség." required></textarea>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit" style="width:100%;"><i class="fa-solid fa-paper-plane"></i> Üzenet küldése</button>
+                        <div class="loader" id="formLoader"></div>
+                        <div class="success" id="successMessage"><i class="fa-solid fa-circle-check"></i> Köszönjük! Az üzenet elküldve.</div>
+                        <div class="error" id="errorMessage"><i class="fa-solid fa-triangle-exclamation"></i> Hiba történt. Kérjük, telefonon érdeklődjön: +36 70 500 9471</div>
+                        <p class="form-note">Az űrlap elküldése után az üzenet az EmailJS beállításai szerint érkezik meg.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="color:#fff; margin-bottom:12px;">CZIBOLYA<span>FESTÉS</span></div>
+                    <p>Festői munkák Ecséden, Hatvanban, Gyöngyösön és környékén.</p>
+                </div>
+                <div>
+                    <h3>Szolgáltatások</h3>
+                    <ul>
+                        <li>Beltéri festés</li>
+                        <li>Kültéri festés</li>
+                        <li>Glettelés</li>
+                        <li>Tapétázás</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kapcsolat</h3>
+                    <ul>
+                        <li><a href="tel:+36705009471">+36 70 500 9471</a></li>
+                        <li><a href="mailto:czibolyafestes@gmail.com">czibolyafestes@gmail.com</a></li>
+                        <li><a id="footerFacebookLink" href="#" target="_blank" rel="noopener">Facebook oldal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2026 Czibolyafestés. Minden jog fenntartva.</div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button type="button" id="closeLightbox" aria-label="Kép bezárása"><i class="fa-solid fa-xmark"></i></button>
+        <img id="lightboxImg" src="" alt="Megnyitott referencia kép">
+    </div>
+
+    <script>
+        const FACEBOOK_URL = 'https://www.facebook.com/peter.czibolya.3';
+
+        document.getElementById('facebookLink').href = FACEBOOK_URL;
+        document.getElementById('footerFacebookLink').href = FACEBOOK_URL;
+
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('active'));
+        });
+
+        function tryImageFallback(img, baseName) {
+            const extensions = ['png', 'jpeg', 'webp'];
+            const currentAttempt = Number(img.dataset.attempt || 0);
+
+            if (currentAttempt >= extensions.length) {
+                img.onerror = null;
+                img.alt = 'Referencia kép nem található';
+                return;
+            }
+
+            img.dataset.attempt = currentAttempt + 1;
+            img.src = baseName + '.' + extensions[currentAttempt];
+        }
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeLightbox = document.getElementById('closeLightbox');
+
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            lightbox.setAttribute('aria-hidden', 'true');
+        });
+
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+            }
+        });
+
+        const form = document.getElementById('contactForm');
+        const loader = document.getElementById('formLoader');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            loader.style.display = 'block';
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+
+            emailjs.send('czibolyafestes', 'template_dh68rhu', {
+                from_name: document.getElementById('name').value,
+                reply_to: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                location: document.getElementById('location').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            }).then(() => {
+                loader.style.display = 'none';
+                successMessage.style.display = 'block';
+                form.reset();
+            }).catch(() => {
+                loader.style.display = 'none';
+                errorMessage.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
